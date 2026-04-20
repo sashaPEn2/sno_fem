@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СНО ФЭМ БГЭУ — Студенческое научное общество факультета экономики и менеджмента</title>
+  <meta name="description" content="Студенческое научное общество факультета экономики и менеджмента БГЭУ. Научные исследования, конференции, проекты и мероприятия для студентов БГЭУ в Минске.">
+  <meta name="keywords" content="СНО БГЭУ, студенческое научное общество, факультет экономики и менеджмента, БГЭУ, наука студентам, ФЭМ БГЭУ, научная деятельность, Минск, экономика, менеджмент">
+  <meta name="author" content="СНО ФЭМ БГЭУ">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Russian">
+  <link rel="canonical" href="https://sno-fem-bgeu.by/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="СНО ФЭМ БГЭУ — Студенческое научное общество">
+  <meta property="og:description" content="Официальный сайт студенческого научного общества факультета экономики и менеджмента БГЭУ.">
+  <meta property="og:url" content="https://sno-fem-bgeu.by/">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="СНО ФЭМ БГЭУ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="yandex-verification" content="ВАШ_КОД_ЯНДЕКС">
+  <meta name="google-site-verification" content="ВАШ_КОД_GOOGLE">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Студенческое научное общество ФЭМ БГЭУ","alternateName":"СНО ФЭМ БГЭУ","url":"https://sno-fem-bgeu.by/","description":"Студенческое научное общество факультета экономики и менеджмента БГЭУ","address":{"@type":"PostalAddress","streetAddress":"пр-т Партизанский, 26","addressLocality":"Минск","addressCountry":"BY"},"parentOrganization":{"@type":"EducationalOrganization","name":"Белорусский государственный экономический университет","alternateName":"БГЭУ"}}
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #0d2d6e; --blue-mid: #1a4494; --blue-light: #e8eef7;
+      --orange: #e87722; --orange-light: #fff3e8;
+      --white: #ffffff; --gray: #f5f6fa;
+      --text: #1a1a2e; --text-light: #5a6480;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text); background: var(--white); font-size: 16px; line-height: 1.6; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; width: 100%; z-index: 100; background: var(--blue); box-shadow: 0 2px 12px rgba(0,0,0,.18); }
+    .nav-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 64px; }
+    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--white); }
+    .nav-logo-badge { background: var(--orange); color: #fff; font-weight: 800; font-size: 13px; padding: 4px 10px; border-radius: 6px; letter-spacing: 1px; }
+    .nav-logo-text { font-size: 14px; font-weight: 600; opacity: .9; }
+    .nav-links { display: flex; gap: 4px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.85); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 6px; transition: background .2s; }
+    .nav-links a:hover { background: rgba(255,255,255,.12); color: #fff; }
+    .nav-cta { background: var(--orange) !important; color: #fff !important; font-weight: 700 !important; }
+    .nav-cta:hover { background: #c8620e !important; }
+
+    /* HERO */
+    #home { min-height: 100vh; background: linear-gradient(135deg, var(--blue) 0%, var(--blue-mid) 60%, #0a1f4e 100%); display: flex; align-items: center; padding: 100px 24px 60px; position: relative; overflow: hidden; }
+    #home::before { content: ''; position: absolute; top: -80px; right: -80px; width: 480px; height: 480px; background: var(--orange); opacity: .07; border-radius: 50%; }
+    #home::after { content: ''; position: absolute; bottom: -100px; left: -60px; width: 320px; height: 320px; background: var(--orange); opacity: .05; border-radius: 50%; }
+    .hero-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .hero-tag { display: inline-block; background: rgba(232,119,34,.2); border: 1px solid var(--orange); color: var(--orange); font-size: 12px; font-weight: 700; padding: 4px 14px; border-radius: 20px; letter-spacing: 1px; margin-bottom: 20px; text-transform: uppercase; }
+    .hero h1 { font-size: clamp(26px,4vw,46px); font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 20px; }
+    .hero h1 span { color: var(--orange); }
+    .hero p { font-size: 17px; color: rgba(255,255,255,.78); margin-bottom: 36px; max-width: 480px; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn { padding: 13px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; text-decoration: none; cursor: pointer; border: none; transition: transform .15s, box-shadow .15s; display: inline-block; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+    .btn-primary { background: var(--orange); color: #fff; }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.4); }
+    .hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .stat-card { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 24px 16px; text-align: center; backdrop-filter: blur(8px); }
+    .stat-num { font-size: 36px; font-weight: 800; color: var(--orange); display: block; }
+    .stat-label { font-size: 13px; color: rgba(255,255,255,.7); margin-top: 4px; }
+
+    /* SECTIONS */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1140px; margin: 0 auto; }
+    .section-label { display: inline-block; font-size: 12px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
+    .section-title { font-size: clamp(22px,3vw,36px); font-weight: 800; color: var(--blue); margin-bottom: 14px; }
+    .section-sub { font-size: 16px; color: var(--text-light); max-width: 560px; margin-bottom: 48px; }
+
+    /* ABOUT */
+    #about { background: var(--gray); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .about-text p { color: var(--text-light); margin-bottom: 16px; font-size: 15px; }
+    .mission-block { background: var(--white); border-left: 4px solid var(--orange); border-radius: 0 10px 10px 0; padding: 20px 24px; margin-top: 24px; }
+    .mission-block h4 { color: var(--blue); font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+    .about-values { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .value-card { background: var(--white); border: 1px solid #e0e7ef; border-radius: 12px; padding: 20px; }
+    .value-icon { font-size: 28px; margin-bottom: 10px; }
+    .value-card h4 { font-size: 14px; font-weight: 700; color: var(--blue); margin-bottom: 6px; }
+    .value-card p { font-size: 13px; color: var(--text-light); }
+
+    /* NEWS */
+    #news { background: var(--white); }
+    .news-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .news-card { border: 1px solid #e0e7ef; border-radius: 14px; overflow: hidden; transition: box-shadow .2s, transform .2s; }
+    .news-card:hover { box-shadow: 0 8px 32px rgba(13,45,110,.1); transform: translateY(-4px); }
+    .news-img { height: 160px; display: flex; align-items: center; justify-content: center; font-size: 48px; }
+    .news-img.blue { background: var(--blue-light); }
+    .news-img.orange { background: var(--orange-light); }
+    .news-body { padding: 20px; }
+    .news-date { font-size: 12px; color: var(--orange); font-weight: 600; margin-bottom: 8px; }
+    .news-title { font-size: 15px; font-weight: 700; color: var(--blue); margin-bottom: 8px; }
+    .news-text { font-size: 13px; color: var(--text-light); }
+    .news-link { display: inline-block; margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--orange); text-decoration: none; }
+
+    /* TEAM */
+    #team { background: var(--gray); }
+    .team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .team-card {
+      background: var(--white); border-radius: 14px; padding: 28px 20px; text-align: center;
+      border: 1px solid #e0e7ef; transition: box-shadow .2s, transform .2s;
+      cursor: pointer;
+    }
+    .team-card:hover { box-shadow: 0 8px 32px rgba(13,45,110,.15); transform: translateY(-5px); }
+    .team-card:hover .team-avatar { transform: scale(1.07); }
+    .team-avatar {
+      width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; font-weight: 800; color: #fff;
+      transition: transform .2s;
+    }
+    .av1 { background: linear-gradient(135deg,var(--blue),var(--blue-mid)); }
+    .av2 { background: linear-gradient(135deg,var(--orange),#c8620e); }
+    .av3 { background: linear-gradient(135deg,#1a7a4a,#0d5235); }
+    .av4 { background: linear-gradient(135deg,#6a1a7a,#41105a); }
+    .av5 { background: linear-gradient(135deg,#1a6a7a,#0d4a5a); }
+    .team-name { font-size: 15px; font-weight: 700; color: var(--blue); margin-bottom: 4px; }
+    .team-role { font-size: 12px; color: var(--orange); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
+    .team-course { font-size: 13px; color: var(--text-light); }
+    .team-hint { font-size: 11px; color: #b0bac8; margin-top: 10px; }
+
+    /* MODAL */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(10,20,50,.55); backdrop-filter: blur(4px);
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--white); border-radius: 20px;
+      max-width: 480px; width: 100%;
+      box-shadow: 0 24px 80px rgba(13,45,110,.25);
+      overflow: hidden; position: relative;
+      animation: modalIn .25s ease;
+    }
+    @keyframes modalIn { from { opacity:0; transform: translateY(20px) scale(.97); } to { opacity:1; transform: none; } }
+    .modal-header {
+      padding: 36px 32px 24px;
+      background: linear-gradient(135deg, var(--blue), var(--blue-mid));
+      display: flex; align-items: center; gap: 20px;
+    }
+    .modal-avatar {
+      width: 80px; height: 80px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; font-weight: 800; color: #fff;
+      border: 3px solid rgba(255,255,255,.3); flex-shrink: 0;
+    }
+    .modal-header-info { flex: 1; }
+    .modal-name { font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+    .modal-role-badge {
+      display: inline-block; background: var(--orange);
+      color: #fff; font-size: 11px; font-weight: 700;
+      padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: .5px;
+    }
+    .modal-close {
+      position: absolute; top: 14px; right: 14px;
+      background: rgba(255,255,255,.15); border: none; color: #fff;
+      width: 32px; height: 32px; border-radius: 50%;
+      font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: background .2s;
+    }
+    .modal-close:hover { background: rgba(255,255,255,.3); }
+    .modal-body { padding: 28px 32px 32px; }
+    .modal-row {
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 0; border-bottom: 1px solid #f0f3f8;
+    }
+    .modal-row:last-child { border-bottom: none; }
+    .modal-row-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: var(--blue-light); display: flex; align-items: center; justify-content: center;
+      font-size: 18px; flex-shrink: 0;
+    }
+    .modal-row-label { font-size: 11px; color: var(--text-light); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
+    .modal-row-val { font-size: 15px; color: var(--text); font-weight: 600; }
+    .modal-row-val a { color: var(--blue); text-decoration: none; }
+    .modal-row-val a:hover { color: var(--orange); text-decoration: underline; }
+
+    /* CONTACT */
+    #contact { background: var(--white); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .contact-info { display: flex; flex-direction: column; gap: 20px; }
+    .contact-item { display: flex; gap: 16px; align-items: flex-start; background: var(--gray); border-radius: 12px; padding: 18px 20px; }
+    .contact-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--blue); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+    .contact-item h4 { font-size: 13px; color: var(--text-light); font-weight: 600; margin-bottom: 3px; }
+    .contact-item p { font-size: 15px; color: var(--blue); font-weight: 600; }
+    .contact-form { background: var(--gray); border-radius: 16px; padding: 32px; }
+    .contact-form h3 { font-size: 20px; font-weight: 800; color: var(--blue); margin-bottom: 20px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .form-group input, .form-group textarea { width: 100%; padding: 12px 14px; border: 1.5px solid #d0dae8; border-radius: 8px; font-size: 14px; font-family: inherit; background: var(--white); color: var(--text); outline: none; transition: border .2s; }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--blue); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-submit { width: 100%; padding: 13px; background: var(--blue); color: #fff; border: none; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; transition: background .2s; }
+    .form-submit:hover { background: var(--orange); }
+
+    /* FOOTER */
+    footer { background: var(--blue); color: rgba(255,255,255,.7); padding: 48px 24px 24px; }
+    .footer-inner { max-width: 1140px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    .footer-brand h3 { color: #fff; font-size: 18px; font-weight: 800; margin-bottom: 10px; }
+    .footer-brand p { font-size: 13px; line-height: 1.7; }
+    footer h4 { color: #fff; font-size: 14px; font-weight: 700; margin-bottom: 14px; }
+    footer ul { list-style: none; }
+    footer ul li { margin-bottom: 8px; }
+    footer ul li a { color: rgba(255,255,255,.65); text-decoration: none; font-size: 13px; transition: color .2s; }
+    footer ul li a:hover { color: var(--orange); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 12px; }
+    .seo-text { display: none; }
+
+    @media(max-width:900px) {
+      .hero-inner, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .team-grid, .news-grid { grid-template-columns: repeat(2,1fr); }
+      .footer-top { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+    @media(max-width:560px) {
+      .team-grid, .news-grid { grid-template-columns: 1fr; }
+      .modal-body { padding: 20px; }
+      .modal-header { padding: 24px 20px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="seo-text" aria-hidden="true">Студенческое научное общество факультета экономики и менеджмента БГЭУ. СНО ФЭМ БГЭУ. Белорусский государственный экономический университет. Минск.</div>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Главное меню">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-badge">СНО</span>
+      <span class="nav-logo-text">ФЭМ БГЭУ</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#news">Новости</a></li>
+      <li><a href="#team">Команда</a></li>
+      <li><a href="#contact">Контакты</a></li>
+      <li><a href="#contact" class="nav-cta">Вступить</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero">
+      <span class="hero-tag">БГЭУ · ФЭМ · Минск</span>
+      <h1>Студенческое <span>научное</span> общество ФЭМ</h1>
+      <p>Объединяем студентов факультета экономики и менеджмента БГЭУ для совместных исследований, конференций и профессионального роста.</p>
+      <div class="hero-btns">
+        <a href="#about" class="btn btn-primary">Узнать больше</a>
+        <a href="#contact" class="btn btn-outline">Вступить в СНО</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card"><span class="stat-num">120+</span><span class="stat-label">Активных участников</span></div>
+      <div class="stat-card"><span class="stat-num">15+</span><span class="stat-label">Научных проектов</span></div>
+      <div class="stat-card"><span class="stat-num">30+</span><span class="stat-label">Мероприятий в год</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-label">О нас</span>
+        <h2 class="section-title">Наука начинается здесь</h2>
+        <p>Студенческое научное общество факультета экономики и менеджмента БГЭУ — это площадка для студентов, которые хотят заниматься реальной научной деятельностью, публиковать исследования и участвовать в международных конференциях.</p>
+        <p>Мы работаем совместно с кафедрами факультета, привлекаем ведущих преподавателей-наставников и создаём условия для профессионального и личностного роста каждого участника.</p>
+        <div class="mission-block">
+          <h4>🎯 Миссия СНО ФЭМ</h4>
+          <p>Развивать научный потенциал студентов, формировать культуру исследовательской деятельности и вносить вклад в экономическую науку Беларуси.</p>
+        </div>
+      </div>
+      <div class="about-values">
+        <div class="value-card"><div class="value-icon">🔬</div><h4>Исследования</h4><p>Поддерживаем студенческие научные работы и публикации в рецензируемых изданиях.</p></div>
+        <div class="value-card"><div class="value-icon">🤝</div><h4>Наставничество</h4><p>Опытные преподаватели помогают студентам на всех этапах научной работы.</p></div>
+        <div class="value-card"><div class="value-icon">🏆</div><h4>Конкурсы</h4><p>Участие в олимпиадах, конкурсах и грантовых программах республиканского уровня.</p></div>
+        <div class="value-card"><div class="value-icon">🌍</div><h4>Конференции</h4><p>Организуем и участвуем в научных конференциях в Беларуси и за рубежом.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section id="news">
+  <div class="section-inner">
+    <span class="section-label">Новости</span>
+    <h2 class="section-title">Последние события</h2>
+    <p class="section-sub">Следите за актуальными новостями и предстоящими мероприятиями студенческого научного общества.</p>
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="news-img blue">📢</div>
+        <div class="news-body">
+          <div class="news-date">15 апреля 2025</div>
+          <h3 class="news-title">XI Студенческая научная конференция ФЭМ</h3>
+          <p class="news-text">Приглашаем студентов принять участие в ежегодной научно-практической конференции факультета. Приём заявок до 30 апреля.</p>
+          <a href="#" class="news-link">Подробнее →</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-img orange">🏅</div>
+        <div class="news-body">
+          <div class="news-date">3 апреля 2025</div>
+          <h3 class="news-title">Победа на республиканской олимпиаде по экономике</h3>
+          <p class="news-text">Студентка ФЭМ заняла первое место на республиканской студенческой олимпиаде по экономической теории.</p>
+          <a href="#" class="news-link">Подробнее →</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-img blue">📚</div>
+        <div class="news-body">
+          <div class="news-date">20 марта 2025</div>
+          <h3 class="news-title">Открытый семинар: «Цифровая экономика и будущее рынков»</h3>
+          <p class="news-text">Члены СНО провели открытый научный семинар с участием более 60 студентов и представителей бизнеса.</p>
+          <a href="#" class="news-link">Подробнее →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="section-inner">
+    <span class="section-label">Команда</span>
+    <h2 class="section-title">Состав СНО ФЭМ</h2>
+    <p class="section-sub">Нажмите на карточку участника, чтобы узнать подробнее о каждом члене актива.</p>
+    <div class="team-grid" id="teamGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <span class="section-label">Контакты</span>
+    <h2 class="section-title">Свяжитесь с нами</h2>
+    <p class="section-sub">Хотите вступить в СНО, задать вопрос или предложить сотрудничество — пишите нам!</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div><h4>Адрес</h4><p>г. Минск, пр-т Партизанский, 26</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div><h4>Email</h4><p>sno.fem@bgeu.by</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div><h4>ВКонтакте / Telegram</h4><p>vk.com/sno_fem_bgeu · @sno_fem</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div><h4>Часы работы</h4><p>Пн–Пт: 10:00–17:00</p></div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Вступить в СНО или задать вопрос</h3>
+        <div class="form-group">
+          <label for="fname">Имя и фамилия</label>
+          <input type="text" id="fname" placeholder="Иван Иванов" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" placeholder="example@bgeu.by">
+        </div>
+        <div class="form-group">
+          <label for="fcourse">Курс и специальность</label>
+          <input type="text" id="fcourse" placeholder="1 курс, 25ДКС">
+        </div>
+        <div class="form-group">
+          <label for="fmsg">Сообщение</label>
+          <textarea id="fmsg" placeholder="Хочу вступить в СНО / Есть вопрос..."></textarea>
+        </div>
+        <button type="button" class="form-submit" onclick="alert('Спасибо! Мы свяжемся с вами в ближайшее время.')">Отправить сообщение</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>СНО ФЭМ БГЭУ</h3>
+        <p>Студенческое научное общество факультета экономики и менеджмента Белорусского государственного экономического университета. Минск, Беларусь.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>БГЭУ</h4>
+        <ul>
+          <li><a href="https://www.bseu.by" target="_blank" rel="noopener">Сайт БГЭУ</a></li>
+          <li><a href="#" target="_blank">Факультет ЭМ</a></li>
+          <li><a href="#" target="_blank">ВКонтакте</a></li>
+          <li><a href="#" target="_blank">Telegram-канал</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 СНО ФЭМ БГЭУ — Студенческое научное общество факультета экономики и менеджмента</span>
+      <span>г. Минск, пр-т Партизанский, 26</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalName">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose" aria-label="Закрыть">✕</button>
+    <div class="modal-header">
+      <div class="modal-avatar" id="mAvatar"></div>
+      <div class="modal-header-info">
+        <div class="modal-name" id="mName"></div>
+        <span class="modal-role-badge" id="mRole"></span>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-row">
+        <div class="modal-row-icon">🎓</div>
+        <div><div class="modal-row-label">Курс и группа</div><div class="modal-row-val" id="mCourse"></div></div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-icon">📋</div>
+        <div><div class="modal-row-label">Обязанности</div><div class="modal-row-val" id="mDuties"></div></div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-icon">✉️</div>
+        <div><div class="modal-row-label">Электронная почта</div><div class="modal-row-val" id="mEmail"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const members = [
+  {
+    init: 'ТА', av: 'av1',
+    name: 'Терро Анжелика',
+    role: 'Председатель',
+    course: '2 курс · 24ДКА-1',
+    email: 'terroa840@mail.ru',
+    duties: 'Руководство деятельностью СНО, координация работы всех подразделений, представление интересов общества на уровне факультета и университета.'
+  },
+  {
+    init: 'НА', av: 'av2',
+    name: 'Невдах Александр',
+    role: 'Зам. председателя (секретарь)',
+    course: '1 курс · 25ДКС',
+    email: 'sashanevdah2010@gmail.com',
+    duties: 'Замещение председателя, ведение протоколов заседаний, организация документооборота и внутренней отчётности СНО.'
+  },
+  {
+    init: 'ДА', av: 'av3',
+    name: 'Денисюк Александр',
+    role: 'Дизайнер и SMM',
+    course: '1 курс · 25ДКЭ',
+    email: 'alexdenissiuk@yandex.by',
+    duties: 'Разработка визуальных материалов, ведение социальных сетей, продвижение мероприятий СНО в цифровой среде.'
+  },
+  {
+    init: 'ЛГ', av: 'av4',
+    name: 'Латушкин Георгий',
+    role: 'Внешние коммуникации',
+    course: '3 курс · 23ДКУ',
+    email: 'heorhi.latushkin@gmail.com',
+    duties: 'Установление и поддержание партнёрских связей с другими организациями, университетами и внешними структурами.'
+  },
+  {
+    init: 'БА', av: 'av5',
+    name: 'Баранова Алина',
+    role: 'Дизайнер',
+    course: '1 курс · 25ДКС',
+    email: 'baranovaad2507@gmail.com',
+    duties: 'Создание графических материалов для мероприятий, разработка фирменного стиля и оформления публикаций СНО.'
+  },
+  {
+    init: 'ХА', av: 'av1',
+    name: 'Хорошко Анастасия',
+    role: 'Конференции и мероприятия',
+    course: '1 курс · 25ДКН',
+    email: 'anastashoroshko@gmail.com',
+    duties: 'Планирование и организация научных конференций, семинаров и студенческих мероприятий от имени СНО.'
+  }
+];
+
+// Render team cards
+const grid = document.getElementById('teamGrid');
+members.forEach((m, i) => {
+  const card = document.createElement('div');
+  card.className = 'team-card';
+  card.setAttribute('role', 'button');
+  card.setAttribute('tabindex', '0');
+  card.setAttribute('aria-label', `Подробнее о ${m.name}`);
+  card.innerHTML = `
+    <div class="team-avatar ${m.av}">${m.init}</div>
+    <div class="team-name">${m.name}</div>
+    <div class="team-role">${m.role}</div>
+    <div class="team-course">${m.course}</div>
+    <div class="team-hint">Нажмите для подробностей</div>
+  `;
+  card.addEventListener('click', () => openModal(i));
+  card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') openModal(i); });
+  grid.appendChild(card);
+});
+
+// Modal logic
+const overlay = document.getElementById('modalOverlay');
+const closeBtn = document.getElementById('modalClose');
+
+function openModal(i) {
+  const m = members[i];
+  document.getElementById('mAvatar').textContent = m.init;
+  document.getElementById('mAvatar').className = `modal-avatar ${m.av}`;
+  document.getElementById('mName').textContent = m.name;
+  document.getElementById('mRole').textContent = m.role;
+  document.getElementById('mCourse').textContent = m.course;
+  document.getElementById('mDuties').textContent = m.duties;
+  document.getElementById('mEmail').innerHTML = `<a href="mailto:${m.email}">${m.email}</a>`;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  closeBtn.focus();
+}
+
+function closeModal() {
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+closeBtn.addEventListener('click', closeModal);
+overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>
